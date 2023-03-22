@@ -8,3 +8,5 @@ Features :
 - Compiled from the Latest version of TWRP source
 
 Bugs : No bugs so far xD
+
+Download now via Release page..!
