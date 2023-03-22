@@ -1,0 +1,26 @@
+/system        ext4      /dev/block/mapper/system                     flags=display=system;backup=1;wipeingui
+/vendor        ext4      /dev/block/mapper/vendor                     flags=display=vendor;backup=1;wipeingui
+/product       ext4      /dev/block/mapper/product                    flags=display=product;backup=1;wipeingui
+/odm           ext4      /dev/block/mapper/odm                        flags=display=odm;backup=1;wipeingui
+
+/system_image        emmc      /dev/block/mapper/system                     flags=display="System Image"";flashimg
+/vendor_image        emmc      /dev/block/mapper/vendor                     flags=display="Vendor Image";flashimg
+/product_image       emmc      /dev/block/mapper/product                    flags=display="Product Image";flashimg
+/odm_image           emmc      /dev/block/mapper/odm                        flags=display="Odm Image";flashimg
+
+/boot          emmc      /dev/block/bootdevice/by-name/boot          flags=display=boot;backup=1;flashimg
+/recovery      emmc      /dev/block/bootdevice/by-name/recovery      flags=display=recovery;backup=1;flashimg
+/data          f2fs      /dev/block/bootdevice/by-name/userdata      flags=display=data;backup=1;flashimg;wipeingui
+/cache         ext4      /dev/block/bootdevice/by-name/cache         flags=display=cache;wipeingui
+/efs           ext4      /dev/block/bootdevice/by-name/sec_efs       flags=display=efs
+/sec_efs       ext4      /dev/block/bootdevice/by-name/sec_efs       flags=display=sec_efs
+/carrier       ext4      /dev/block/bootdevice/by-name/carrier       flags=display=carrier
+/modem         emmc      /dev/block/bootdevice/by-name/apnhlos       flags=display=modem
+/misc          emmc      /dev/block/bootdevice/by-name/misc          flags=display=misc
+/dtbo          emmc      /dev/block/bootdevice/by-name/dtbo          flags=display=dtbo;backup=1;flashimg
+/prism         ext4      /dev/block/bootdevice/by-name/prism         flags=display=prism;backup=1;flashimg
+/vbmeta        emmc      /dev/block/bootdevice/by-name/vbmeta        flags=display=vbmeta;backup=1;flashimg
+/optics        ext4      /dev/block/bootdevice/by-name/optics        flags=display=optics;backup=1;flashimg
+
+/external_sd    vfat    /dev/block/mmcblk0p1 /dev/block/mmcblk0 flags=display="External SD Card";storage;wipeingui;removable;
+/usb-otg        vfat    /dev/block/sdf1 /dev/block/sdf          flags=display="USB OTG";storage;wipeingui;removable;
