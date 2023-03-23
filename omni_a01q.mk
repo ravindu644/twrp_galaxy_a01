@@ -1,5 +1,5 @@
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
