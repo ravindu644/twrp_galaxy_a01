@@ -22,5 +22,5 @@
 /vbmeta        emmc      /dev/block/bootdevice/by-name/vbmeta        flags=display=vbmeta;backup=1;flashimg
 /optics        ext4      /dev/block/bootdevice/by-name/optics        flags=display=optics;backup=1;flashimg
 
-/external_sd    vfat    /dev/block/mmcblk0p1 /dev/block/mmcblk0 flags=display="External SD Card";storage;wipeingui;removable;
-/usb-otg        vfat    /dev/block/sdf1 /dev/block/sdf          flags=display="USB OTG";storage;wipeingui;removable;
+/external_sd	vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=storage;wipeingui;removable;display="Micro SD Card"
+/usb-otg	auto		/dev/block/sda1	/dev/block/sda				flags=display="USB OTG";storage;wipeingui;removable
